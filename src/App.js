@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import ProfileInfo from './components/ProfileInfo/ProfileInfo'
+import TabMenu from './components/TabMenu/TabMenu';
+import { useDispatch } from 'react-redux';
+import { getLocaleStorageTheme, themeChange } from './redux/themeSlice';
+import { useEffect } from 'react';
 
 function App() {
+  let dispacth = useDispatch()
+
+   
+
+  useEffect(() => {
+    dispacth(getLocaleStorageTheme())
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-[#F3F4F6] dark:bg-gray-500 w-full py-10 px-4 overflow-x-hidden'>
+      
+      <ProfileInfo />
+      <TabMenu /> 
     </div>
   );
 }
