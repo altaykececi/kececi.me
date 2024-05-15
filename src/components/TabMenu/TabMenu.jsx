@@ -46,6 +46,10 @@ const TabMenu = () => {
     setActiveButton(name);
   }
 
+  const counterCategory = (name) => {
+    const categoryLength = projects.filter(item => item.tags.includes(name))
+    return categoryLength.length
+  }
 
 
   return (
@@ -58,28 +62,28 @@ const TabMenu = () => {
         </div>
         <div className='mb-8 gap-4 flex uppercase flex-col sm:flex-row'>
           <button
-            onClick={(e) => reactClick("react")}             
-            className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white ${activeButton === "react" ? "active" : ""}`}><FaReact size={"25px"} /> React</button>
-          <button onClick={(e) => reactClick("css")}  className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white ${activeButton === "css" ? "active" : ""}`}><RiCss3Line size={"22px"} />Css</button>
-          <button onClick={(e) => reactClick("wordpress")}  className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white ${activeButton === "wordpress" ? "active" : ""}`}><FaWordpressSimple size={"22px"} />Wordpress</button>
+            onClick={(e) => reactClick("react")}
+            className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white ${activeButton === "react" ? "active" : ""}`}><FaReact size={"25px"} /> React ({counterCategory("react")})</button>
+          <button onClick={(e) => reactClick("css")} className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white ${activeButton === "css" ? "active" : ""}`}><RiCss3Line size={"22px"} />Css ({counterCategory("css")})</button>
+          <button onClick={(e) => reactClick("wordpress")} className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white ${activeButton === "wordpress" ? "active" : ""}`}><FaWordpressSimple size={"22px"} />Wordpress ({counterCategory("wordpress")})</button>
         </div>
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 gap-y-6 grid-cols-1 '>
           {
             projects
-            .filter((project) => project.tags.includes(activeButton))
-            .map((item, index) => {
-              return (
-                <ProjectCard
-                  key={index}
-                  img={item.image}
-                  title={item.title}
-                  desc={item.desc}
-                  tags={item.tags}
-                  url={item.url}
-                />
-              )
-            })
+              .filter((project) => project.tags.includes(activeButton))
+              .map((item, index) => {
+                return (
+                  <ProjectCard
+                    key={index}
+                    img={item.image}
+                    title={item.title}
+                    desc={item.desc}
+                    tags={item.tags}
+                    url={item.url}
+                  />
+                )
+              })
           }
         </div>
       </div>

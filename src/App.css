@@ -10,15 +10,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  background-color: #F3F4F6;
+}
+
+html.dark {
+  background-color: #6B7280;
+}
 
 body {
-  font-family: "Inter", sans-serif;
-}
+  font-family: "Inter", sans-serif;  
+} 
 
-.active{
+.active {
   background: #34495e;
   color: white;
-  
-
 }
- 

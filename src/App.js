@@ -8,17 +8,16 @@ import { useEffect } from 'react';
 function App() {
   let dispacth = useDispatch()
 
-   
+
 
   useEffect(() => {
     dispacth(getLocaleStorageTheme())
   }, [])
 
   return (
-    <div className='bg-[#F3F4F6] dark:bg-gray-500 w-full py-10 px-4 overflow-x-hidden'>
-      
+    <div className='bg-[#F3F4F6] dark:bg-gray-500 w-full py-10 px-4 overflow-x-hidden h-screen'>
       <ProfileInfo />
-      <TabMenu /> 
+      <TabMenu />
     </div>
   );
 }
