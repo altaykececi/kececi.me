@@ -6,9 +6,7 @@ import { getLocaleStorageTheme, themeChange } from './redux/themeSlice';
 import { useEffect } from 'react';
 
 function App() {
-  let dispacth = useDispatch()
-
-
+  let dispacth = useDispatch() 
 
   useEffect(() => {
     dispacth(getLocaleStorageTheme())
