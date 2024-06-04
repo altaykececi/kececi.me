@@ -101,15 +101,83 @@ const TabMenu = () => {
       desc: "Css Alıştırmaları",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/BayjPEV"
-    },{
+    }, {
       image: "https://i.imgur.com/66diiiU.png",
       title: "Css Bear",
       desc: "Css Alıştırmaları",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/GRgjydM"
+    }, {
+      image: "https://i.imgur.com/MtruVGF.png",
+      title: "Pizza",
+      desc: "Css Alıştırmaları",
+      tags: ["css"],
+      url: "https://codepen.io/kececi/pen/oNggYoL"
+    }, {
+      image: "https://i.imgur.com/3lIGO6f.png",
+      title: "Pokémon",
+      desc: "Css Alıştırmaları",
+      tags: ["css"],
+      url: "https://codepen.io/kececi/pen/rNaBxyo"
+    }, {
+      image: "https://i.imgur.com/eooxIqH.png",
+      title: "Dondurma",
+      desc: "Css Alıştırmaları",
+      tags: ["css"],
+      url: "https://codepen.io/kececi/pen/aMYRvy"
+    },
+    {
+      image: "https://i.imgur.com/pzHO7YF.png",
+      title: "Kedi",
+      desc: "Css Alıştırmaları",
+      tags: ["css"],
+      url: "https://codepen.io/kececi/pen/yreJmQ"
+    }, {
+      image: "https://i.imgur.com/w0jzX4I.png",
+      title: "Kutu",
+      desc: "Css Alıştırmaları",
+      tags: ["css"],
+      url: "https://codepen.io/kececi/pen/GeLpJJ?editors=0010"
+    }, {
+      image: "https://i.imgur.com/bVEcMBz.png",
+      title: "Domuz",
+      desc: "Css Alıştırmaları",
+      tags: ["css"],
+      url: "https://codepen.io/kececi/pen/bZvJjz"
+    }, {
+      image: "https://i.imgur.com/WiTQ5GH.png",
+      title: "Pokemon",
+      desc: "Css Alıştırmaları",
+      tags: ["css"],
+      url: "https://codepen.io/kececi/pen/wQPGbP"
+    },
+    {
+      image: "https://i.imgur.com/H5JzrKk.png",
+      title: "Login Page",
+      desc: "Css Alıştırmaları",
+      tags: ["css"],
+      url: "https://codepen.io/kececi/pen/rNxdGwO"
+    }, {
+      image: "https://i.imgur.com/ocECzLz.png",
+      title: "Google Error Page",
+      desc: "Css Alıştırmaları",
+      tags: ["css"],
+      url: "https://codepen.io/kececi/pen/KEmjMg"
+    },
+    {
+      image: "https://i.imgur.com/zPiCgky.png",
+      title: "Menu",
+      desc: "Css Alıştırmaları",
+      tags: ["css"],
+      url: "https://codepen.io/kececi/pen/LavVzr"
+    }, {
+      image: "https://i.imgur.com/NV4nbF3.png",
+      title: "Efektif Animasyon",
+      desc: "Css Alıştırmaları",
+      tags: ["css"],
+      url: "https://codepen.io/kececi/pen/MWWxjMv"
     },
   ]
-
   const [activeButton, setActiveButton] = useState("react");
 
 
