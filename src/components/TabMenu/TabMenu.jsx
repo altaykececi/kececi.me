@@ -102,7 +102,7 @@ const TabMenu = () => {
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/BayjPEV"
     },{
-      image: "https://i.imgur.com/Rv9NoFN.png",
+      image: "https://i.imgur.com/66diiiU.png",
       title: "Css Bear",
       desc: "Css Alıştırmaları",
       tags: ["css"],
