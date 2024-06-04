@@ -94,7 +94,14 @@ const TabMenu = () => {
       desc: "React ve tailwindcss kullanarak geliştirmiş olduğum bir portfolio sitesi.",
       tags: ["react", "tailwindcss"],
       url: "https://kececi-number-matching-game.netlify.app"
-    }
+    },
+    {
+      image: "https://i.imgur.com/Rv9NoFN.png",
+      title: "Star Wars Yoda",
+      desc: "Css Alıştırmaları",
+      tags: ["css"],
+      url: "https://codepen.io/kececi/pen/BayjPEV"
+    },
   ]
 
   const [activeButton, setActiveButton] = useState("react");
