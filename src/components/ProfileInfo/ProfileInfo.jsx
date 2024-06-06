@@ -70,7 +70,8 @@ const ProfileInfo = () => {
                     <h2 className='text-2xl font-bold'>Recep Kececi</h2>
                     <span className='text-gray-500 dark:text-white'>Frontend Developer</span>
                 </div>
-                <span className='text-sm text-gray-500 dark:text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptate. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, harum animi! Distinctio, repellendus soluta, consequuntur aspernatur illum quae beatae reiciendis officiis cumque animi voluptates! Porro, nemo. Maxime aliquam et aspernatur!
+                <span className='text-sm text-gray-500 dark:text-white'>Merhaba, ben Recep Kececi. Yazılım geliştirme ve tasarım konularında çalışmakta olan biriyim. React ve CSS gibi teknolojilere olan hakimiyetimle web uygulamaları geliştiriyorum. Yenilikçi projelerde çalışarak deneyimimi ve yeteneklerimi geliştirmeyi hedefliyorum. İşbirliği ruhuyla takımımı desteklemek ve kullanıcı odaklı çözümler sunmak için buradayım
+
                 </span>
                 <div className="flex flex-col md:flex-row gap-4 ">
                     {
