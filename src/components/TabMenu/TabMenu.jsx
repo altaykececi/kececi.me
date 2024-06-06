@@ -228,12 +228,13 @@ const TabMenu = () => {
           <button onClick={(e) => reactClick("wordpress")} className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white border dark:border-[#34495E] ${activeButton === "wordpress" ? "active" : ""}`}><FaWordpressSimple size={"22px"} />Wordpress ({counterCategory("wordpress")})</button>
         </div>
 
-        <div className='pb-8 text-[#34495E] font-semibold'>
+        <div className='pb-8 dark:text-white text-[#34495E]  font-semibold'>
           {
-            activeButton === "react" ?
-              <p>React projelerimi içeren portföyümde, modern web geliştirme tekniklerini kullanarak oluşturduğum uygulamaları sergiliyorum. Her proje, benim teknik becerilerimi ve yaratıcılığımı yansıtmaktadır. Siz de bu projelerin hem kod yapısını hem tasarımını detaylıca inceleyebilirsiniz.</p>
-              : <p>Yıllar önce, her gün küçük bir tasarım yaparak, CSS becerilerimi geliştirmek için bir hedef koymuştum. Bu süreçte, birçok farklı proje üzerinde çalıştım ve her biri benim için önemli bir öğrenme deneyimi oldu. İşte onlardan bazıları.</p>
+            activeButton === "react" ? <p>React projelerimi içeren portföyümde, modern web geliştirme tekniklerini kullanarak oluşturduğum uygulamaları sergiliyorum. Her proje, benim teknik becerilerimi ve yaratıcılığımı yansıtmaktadır. Siz de bu projelerin hem kod yapısını hem tasarımını detaylıca inceleyebilirsiniz.</p> : ""}
+          {
+            activeButton === "css" ? <p>Yıllar önce, her gün küçük bir tasarım yaparak, CSS becerilerimi geliştirmek için bir hedef koymuştum. Bu süreçte, birçok farklı proje üzerinde çalıştım ve her biri benim için önemli bir öğrenme deneyimi oldu. İşte onlardan bazıları.</p> : ""
           }
+          
         </div>
 
         <div
