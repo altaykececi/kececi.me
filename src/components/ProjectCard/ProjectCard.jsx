@@ -29,7 +29,7 @@ const ProjectCard = (props) => {
               })
             }
           </div> 
-          <Link to={props.githubUrl} target='_blank' className='rounded hover:bg-[#ececec] dark:text-white dark:hover:text-[#34495E] dark:hover:bg-gray-400 border dark:border-[#34495E] p-2 cursor-pointer'><FiGithub /></Link>
+          <Link to={props.githubUrl} target='_blank' className='rounded hover:bg-[#ececec] dark:text-white dark:hover:text-[#a1adb9] dark:hover:bg-gray-600 border dark:border-[#34495E] p-2 cursor-pointer'><FiGithub /></Link>
         </div>
       </div>
     </motion.div>
