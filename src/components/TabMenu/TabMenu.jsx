@@ -13,7 +13,7 @@ const TabMenu = () => {
   const projects = [
     {
       image: "https://app.netlify.com/.netlify/images?url=https://d33wubrfki0l68.cloudfront.net/65b40524d9ab560008fc41ff/screenshot_2024-01-26-19-17-51-0000.webp&fit=cover&h=500&w=800",
-      title: "Resao Proffesional Crative Theme",
+      title: "Resao Professional Crative Theme",
       desc: "React ve tailwindcss kullanarak geliştirmiş olduğum çok kapsamlı, full responsive bir react projesi.",
       tags: ["react", "tailwindcss"],
       url: "https://resao.netlify.app",
