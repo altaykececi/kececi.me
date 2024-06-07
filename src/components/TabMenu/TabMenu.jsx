@@ -16,84 +16,96 @@ const TabMenu = () => {
       title: "Resao Crative Theme",
       desc: "React ve tailwindcss kullanarak geliştirmiş olduğum çok kapsamlı, full responsive bir react projesi.",
       tags: ["react", "tailwindcss"],
-      url: "https://resao.netlify.app"
+      url: "https://resao.netlify.app",
+      githubUrl:"https://github.com/kececirecep/resao",
     },
     {
       image: "https://i.imgur.com/WSxKlNL.png",
       title: "Hekto E-commerce Theme",
       desc: "React ve Tailwindcss kullanarak geliştirmiş olduğum e-commerce react uygulaması.",
       tags: ["react", "redux toolkit", "tailwindcss"],
-      url: "https://hekto-creative.netlify.app"
+      url: "https://hekto-creative.netlify.app",
+      githubUrl:"https://github.com/kececirecep/hekto-ecommerce",
     },
     {
       image: "https://i.imgur.com/BLyy1Zi.png",
       title: "Lawyer Landing Page",
       desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
       tags: ["react", "tailwindcss"],
-      url: "https://lawyer-creative-page.netlify.app"
+      url: "https://lawyer-creative-page.netlify.app",
+      githubUrl:"https://github.com/kececirecep/Lawyer-Landing-Page",
     },
     {
       image: "https://i.imgur.com/g45POw4.png",
       title: "Argencis Landing Page",
       desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
       tags: ["react", "tailwindcss", "landing page"],
-      url: "https://argencis-creative.netlify.app"
+      url: "https://argencis-creative.netlify.app",
+      githubUrl:"https://github.com/kececirecep/argencis-creative-landing",
     },
     {
       image: "https://i.imgur.com/HXxKCx1.png",
       title: "Creativo",
       desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
       tags: ["react", "tailwindcss", "creative page"],
-      url: "https://design-creative.netlify.app"
+      url: "https://design-creative.netlify.app",
+      githubUrl:"https://github.com/kececirecep/Creative",
     },
     {
       image: "https://i.imgur.com/MiuFtqF.png",
       title: "Banking Landing Page",
       desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
       tags: ["react", "tailwindcss", "landing page"],
-      url: "https://banking-landing-page.netlify.app"
+      url: "https://banking-landing-page.netlify.app",
+      githubUrl:"https://github.com/kececirecep/Banking-Website-Landing-Page",
     },
     {
       image: "https://i.imgur.com/FQPgfu7.png",
       title: "Blog Template",
       desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
       tags: ["react", "tailwindcss", "blog"],
-      url: "https://kececi-portfolio-blog.netlify.app"
+      url: "https://kececi-portfolio-blog.netlify.app",
+      githubUrl:"https://github.com/kececirecep/blogPortfoliio",
     },
     {
       image: "https://i.imgur.com/K9qsBgM.png",
       title: "Youtube Video List",
       desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
       tags: ["react", "tailwindcss"],
-      url: "https://kececi-youtube.netlify.app"
+      url: "https://kececi-youtube.netlify.app",
+      githubUrl:"https://github.com/kececirecep/youtube",
     },
     {
       image: "https://i.imgur.com/GL1nqJN.png",
       title: "Todo App",
       desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
       tags: ["react", "tailwindcss"],
-      url: "https://kececi-todo.netlify.app"
+      url: "https://kececi-todo.netlify.app",
+      githubUrl:"https://github.com/kececirecep/todo",
     },
     {
       image: "https://i.imgur.com/l4VHgxh.png",
       title: "Portfolio",
       desc: "React ve tailwindcss kullanarak geliştirmiş olduğum bir react projesi.",
       tags: ["react", "tailwindcss"],
-      url: "https://kececi-portfolio-v2.netlify.app"
+      url: "https://kececi-portfolio-v2.netlify.app",
+      githubUrl:"https://github.com/kececirecep/portfolio-one",
     },
     {
       image: "https://i.imgur.com/zuGTlR1.png",
       title: "Number Matching Game",
       desc: "React ve tailwindcss kullanarak geliştirmiş olduğum numara eşleştirme oyunu.",
       tags: ["react", "tailwindcss"],
-      url: "https://kececi-number-matching-game.netlify.app"
+      url: "https://kececi-number-matching-game.netlify.app",
+      githubUrl:"https://github.com/kececirecep/number-matching-game",
     },
     {
       image: "https://i.imgur.com/1dpkbu5.png",
       title: "Portfolio v2",
       desc: "React ve tailwindcss kullanarak geliştirmiş olduğum bir portfolio sitesi.",
       tags: ["react", "tailwindcss"],
-      url: "https://kececi-number-matching-game.netlify.app"
+      url: "https://kececi-number-matching-game.netlify.app",
+      githubUrl:"https://github.com/kececirecep/portfolio-theme",
     },
     {
       image: "https://i.imgur.com/Rv9NoFN.png",
@@ -256,6 +268,7 @@ const TabMenu = () => {
                       desc={item.desc}
                       tags={item.tags}
                       url={item.url}
+                      githubUrl={item.githubUrl}
                     />
                   </motion.div>
                 )
