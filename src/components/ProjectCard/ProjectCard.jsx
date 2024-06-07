@@ -24,12 +24,12 @@ const ProjectCard = (props) => {
             {
               props.tags.map((item, index) => {
                 return (
-                  <span key={index} className='bg-[#ececec] text-[#333333] dark:bg-gray-400 font-semibold rounded-xl text-[12px] px-3 py-0.5 capitalize'>{item}</span>
+                  <span key={index} className='bg-[#ececec] text-[#333333] dark:bg-transparent dark:text-[#939ba3] border dark:border-[#34495E] font-semibold rounded-xl text-[12px] px-3 py-0.5 capitalize'>{item}</span>
                 )
               })
             }
           </div> 
-          <Link to={props.githubUrl} target='_blank' className='rounded hover:bg-[#ececec] dark:text-white border dark:border-[#34495E] p-2 cursor-pointer'><FiGithub /></Link>
+          <Link to={props.githubUrl} target='_blank' className='rounded hover:bg-[#ececec] dark:text-white dark:hover:text-[#34495E] dark:hover:bg-gray-400 border dark:border-[#34495E] p-2 cursor-pointer'><FiGithub /></Link>
         </div>
       </div>
     </motion.div>
