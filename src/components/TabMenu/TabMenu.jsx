@@ -236,8 +236,7 @@ const TabMenu = () => {
           <button
             onClick={(e) => reactClick("react")}
             className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white ${activeButton === "react" ? "active" : ""}`}><FaReact size={"25px"} /> React ({counterCategory("react")})</button>
-          <button onClick={(e) => reactClick("css")} className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white border dark:border-[#34495E] ${activeButton === "css" ? "active" : ""}`}><RiCss3Line size={"22px"} />Css ({counterCategory("css")})</button>
-          {/* <button onClick={(e) => reactClick("wordpress")} className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white border dark:border-[#34495E] ${activeButton === "wordpress" ? "active" : ""}`}><FaWordpressSimple size={"22px"} />Wordpress ({counterCategory("wordpress")})</button> */}
+          <button onClick={(e) => reactClick("css")} className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white border dark:border-[#34495E] ${activeButton === "css" ? "active" : ""}`}><RiCss3Line size={"22px"} />Css ({counterCategory("css")})</button> 
         </div>
 
         <div className='pb-8 dark:text-white text-gray-500   text-sm'>
