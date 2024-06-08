@@ -34,7 +34,7 @@ const Timeline = () => {
     ]
 
     return (
-        <div className='container max-w-[1200px] mx-auto bg-white dark:bg-gray-800 dark:text-white mt-8 rounded p-4 pt-4'>
+        <div className='container max-w-[1000px] mx-auto bg-white dark:bg-gray-800 dark:text-white mt-8 rounded p-4 pt-4'>
             <h2 className='text-xl font-medium syne mb-4 flex items-center gap-2'><IoBriefcaseOutline size={20} /> Deneyim</h2>
             {
                 data.map((item, index) => {
