@@ -76,7 +76,7 @@ const ProfileInfo = () => {
                 <div className='p-2 bg-[#34495e] text-gray-100 dark:bg-[#34495e] rounded-lg flex items-center justify-center gap-4 dark:text-yellow-200 absolute right-6 top-6'>
                     <button onClick={() => handleClick()}>{themeStatus === "dark" ? <IoMdSunny size="32px" /> : <BsCloudMoon size="32px" />}</button>
                 </div>
-                <div className='p-2 bg-[#34495e] text-gray-100 dark:bg-[#34495e] rounded-lg flex items-center justify-center gap-4 dark:text-[#c5c7d3] absolute   md:right-24 top-6'>
+                <div className='p-2  text-[#34495e] dark:bg-[#34495e00] rounded-lg flex items-center justify-center gap-4 dark:text-[#c5c7d3] absolute   md:right-24 top-6'>
                     <button onClick={() => handleClickLanguage()}>{language === "tr" ? <span className='flex items-center gap-2'><FaLanguage size="32px" /> TR</span> : <span className='flex items-center gap-2'><FaLanguage size="32px" /> EN</span>}</button>
                 </div>
 

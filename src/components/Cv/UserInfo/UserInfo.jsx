@@ -7,7 +7,7 @@ import { TbCurrentLocation } from "react-icons/tb";
 const UserInfo = () => {
     return (
         <div className='container max-w-[1200px] mx-auto rounded'>
-            <div className='text-center syne md:py-8'>
+            <div className='text-center syne md:py-2'>
                 <h2 className='text-4xl font-light dark:text-white'>Recep Kececi</h2>
                 <h6 className='text-lg font-light text-gray-500 dark:text-gray-300'>Frontend Developer</h6>
             </div>
