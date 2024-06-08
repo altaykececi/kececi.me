@@ -1,21 +1,33 @@
 import './App.css';
-import ProfileInfo from './components/ProfileInfo/ProfileInfo'
-import TabMenu from './components/TabMenu/TabMenu';
+
+import Home from './pages/Home'
+import CvDetail from './pages/CvDetail'
+
 import { useDispatch } from 'react-redux';
-import { getLocaleStorageTheme, themeChange } from './redux/themeSlice';
+import { getLocaleStorageTheme } from './redux/themeSlice';
+import { getLocaleStorageLanguage } from './redux/languageSlice'
 import { useEffect } from 'react';
 
+import { Routes, Route } from 'react-router-dom';
+
+
 function App() {
-  let dispacth = useDispatch() 
+  let dispatch = useDispatch()
 
   useEffect(() => {
-    dispacth(getLocaleStorageTheme())
+    dispatch(getLocaleStorageTheme())
   }, [])
 
+  useEffect(() => {
+    dispatch(getLocaleStorageLanguage());
+  }, []);
+
   return (
-    <div className='bg-[#F3F4F6] dark:bg-gray-500 w-full py-10 px-4 overflow-x-hidden h-screen'>
-      <ProfileInfo />
-      <TabMenu />
+    <div className=' '>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/cv-details' element={<CvDetail />} />
+      </Routes>
     </div>
   );
 }
