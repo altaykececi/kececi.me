@@ -216,7 +216,7 @@ const TabMenu = () => {
   };
 
   const item = {
-    hidden: { x: 20, opacity: 0 }, // Yatay kaydırma (x)
+    hidden: { x: 20, opacity: 0 },
     visible: {
       x: 0,
       opacity: 1

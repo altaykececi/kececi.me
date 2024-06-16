@@ -39,7 +39,7 @@ const Timeline = () => {
             {
                 data.map((item, index) => {
                     return (
-                        <div className='relative' key={index}>
+                        <div className='relative ' key={index}>
                             <div className='absolute h-full w-0.5 bg-gray-200 dark:bg-gray-700 left-3 top-0 transform -translate-x-1/2'></div>
                             <div>
                                 <div className='flex items-center'>
