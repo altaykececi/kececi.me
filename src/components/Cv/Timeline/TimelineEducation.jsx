@@ -1,36 +1,51 @@
 import React from 'react'
 import { IoSchoolSharp } from "react-icons/io5";
 import { MdOutlineSchool } from "react-icons/md";
+import { useSelector } from 'react-redux';
 
 const TimelineEducation = () => {
+    let language = useSelector(state => state.language.language)
+
     const data = [
         {
             icon: <MdOutlineSchool />,
-            title: "Bilgisayar Programcılığı",
+            title: language === "tr" ? "Bilgisayar Programcılığı" : "Computer Programmer",
             company: "Kastamonu Üniversitesi",
             time: "2016-2018",
             desc: (
-                <>
-                    Bilgisayar programlama, veri tabanı yönetimi, web geliştirme ve yazılım konularında eğitim aldım. Javascript, C# ve SQL gibi dillerde uygulamalı projeler gerçekleştirdim. <br />
-                    Bitirme projesi olarak C# market otomasyonu yaptım. <br />
-                    Çok sayıda pixel-perfect psd to css tema yaptım.
-                </>
+                language === "tr" ?
+                    <>
+                        Bilgisayar programlama, veri tabanı yönetimi, web geliştirme ve yazılım konularında eğitim aldım. Javascript, C# ve SQL gibi dillerde uygulamalı projeler gerçekleştirdim. <br />
+                        Bitirme projesi olarak C# market otomasyonu yaptım. <br />
+                        Çok sayıda pixel-perfect psd to css tema yaptım.
+                    </> :
+                    <>
+                        I received training in computer programming, database management, web development and software. I have carried out applied projects in languages ​​such as Javascript, C# and SQL. <br />
+                        As my graduation project, I made C# market automation. <br />
+                        I have made many pixel-perfect psd to css themes.
+                    </>
             ),
         }, {
             icon: <MdOutlineSchool />,
-            title: "Bilişim Öğrencisi",
+            title: language === "tr" ? "Bilişim Öğrencisi" : "IT Student",
             company: "Gebze Mesleki ve Teknik Anadolu Lisesi",
             time: "2016",
             desc: (
-                <>
-                    Bilişim teknolojileri, ağ yönetimi ve temel programlama konularında eğitim aldım. <br /> HTML, CSS ve Javascript gibi dillerde temel beceriler kazandım ve küçük ölçekli projeler gerçekleştirdim.
-                </>
+                language === "tr" ?
+                    <>
+                        Bilişim teknolojileri, ağ yönetimi ve temel programlama konularında eğitim aldım. <br />
+                        HTML, CSS ve Javascript gibi dillerde temel beceriler kazandım ve küçük ölçekli projeler gerçekleştirdim.
+                    </> :
+                    <>
+                        I received training in information technologies, network management and basic programming. <br />
+                        I gained basic skills in languages ​​such as HTML, CSS and Javascript and carried out small-scale projects.
+                    </>
             ),
         },
     ]
     return (
-        <div className='container max-w-[1200px] mx-auto bg-white dark:bg-gray-800 dark:text-white mt-8 rounded py-6 px-2 md:px-32'>
-            <h2 className='text-xl font-medium syne mb-4 flex items-center gap-2'><MdOutlineSchool size={20} /> Eğitim</h2>
+        <div className='container max-w-[1200px] mx-auto bg-white dark:bg-gray-800 dark:text-white my-8 rounded py-6 px-2 md:px-32'>
+            <h2 className='text-xl font-medium syne mb-4 flex items-center gap-2'><MdOutlineSchool size={20} /> {language === "tr" ? "Eğitim" : "Education"}</h2>
             {
                 data.map((item, index) => {
                     return (
