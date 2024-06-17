@@ -8,7 +8,7 @@ import { MdWorkspaces } from "react-icons/md";
 
 const Skills = () => {
     return (
-        <div className='container max-w-[1200px] mx-auto bg-white dark:bg-gray-800 dark:text-white p-4 rounded'>
+        <div className='container max-w-[1200px] mx-auto bg-white dark:bg-gray-800 dark:text-white py-6 px-2 md:px-32 rounded'>
             <h2 className='text-2xl font-medium syne mb-4 flex items-center gap-2'><MdWorkspaces size={18}/> Skills</h2>
             <div className='flex md:flex-row flex-col items-start md:items-center justify-between'>
                 <span className='flex items-center justify-start gap-2 py-2 text-xl text-gray-600 dark:text-white'><IoLogoReact />React</span>

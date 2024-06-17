@@ -7,187 +7,204 @@ import { FaWordpressSimple } from "react-icons/fa";
 
 
 import { motion } from "framer-motion";
+import { useSelector } from 'react-redux';
+import { languageChange } from '../../redux/languageSlice';
 
 const TabMenu = () => {
+
+  let language = useSelector(state => state.language.language)
 
   const projects = [
     {
       image: "https://app.netlify.com/.netlify/images?url=https://d33wubrfki0l68.cloudfront.net/65b40524d9ab560008fc41ff/screenshot_2024-01-26-19-17-51-0000.webp&fit=cover&h=500&w=800",
       title: "Resao Professional Crative Theme",
-      desc: "React ve tailwindcss kullanarak geliştirmiş olduğum çok kapsamlı, full responsive bir react projesi.",
+      desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum çok kapsamlı, full responsive bir react projesi." : "A very comprehensive, fully responsive react project that I developed using React and tailwindcss.",
       tags: ["react", "tailwindcss"],
       url: "https://resao.netlify.app",
-      githubUrl:"https://github.com/kececirecep/resao",
+      githubUrl: "https://github.com/kececirecep/resao",
     },
     {
       image: "https://i.imgur.com/WSxKlNL.png",
-      title: "Hekto E-commerce Theme",
-      desc: "React ve Tailwindcss kullanarak geliştirmiş olduğum e-commerce react uygulaması.",
+      title: "Hekto E-commerce Theme", 
+      desc: language === "tr" ? "React ve Tailwindcss kullanarak geliştirmiş olduğum e-commerce react uygulaması." : "E-commerce React application I developed using React and Tailwindcss.",
       tags: ["react", "redux toolkit", "tailwindcss"],
       url: "https://hekto-creative.netlify.app",
-      githubUrl:"https://github.com/kececirecep/hekto-ecommerce",
+      githubUrl: "https://github.com/kececirecep/hekto-ecommerce",
     },
     {
       image: "https://i.imgur.com/BLyy1Zi.png",
-      title: "Lawyer Landing Page",
-      desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
+      title: "Lawyer Landing Page", 
+      desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi." : "It is a fully responsive react project that I developed using React and tailwindcss.",
       tags: ["react", "tailwindcss"],
       url: "https://lawyer-creative-page.netlify.app",
-      githubUrl:"https://github.com/kececirecep/Lawyer-Landing-Page",
+      githubUrl: "https://github.com/kececirecep/Lawyer-Landing-Page",
     },
     {
       image: "https://i.imgur.com/g45POw4.png",
-      title: "Argencis Landing Page",
-      desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
+      title: "Argencis Landing Page", 
+      desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi." : "It is a fully responsive react project that I developed using React and tailwindcss.",
       tags: ["react", "tailwindcss", "landing page"],
       url: "https://argencis-creative.netlify.app",
-      githubUrl:"https://github.com/kececirecep/argencis-creative-landing",
+      githubUrl: "https://github.com/kececirecep/argencis-creative-landing",
     },
     {
       image: "https://i.imgur.com/HXxKCx1.png",
-      title: "Creativo",
-      desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
+      title: "Creativo", 
+      desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi." : "It is a fully responsive react project that I developed using React and tailwindcss.",
       tags: ["react", "tailwindcss", "creative page"],
       url: "https://design-creative.netlify.app",
-      githubUrl:"https://github.com/kececirecep/Creative",
+      githubUrl: "https://github.com/kececirecep/Creative",
     },
     {
       image: "https://i.imgur.com/MiuFtqF.png",
       title: "Banking Landing Page",
-      desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
+      desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi." : "It is a fully responsive react project that I developed using React and tailwindcss.",
       tags: ["react", "tailwindcss", "landing page"],
       url: "https://banking-landing-page.netlify.app",
-      githubUrl:"https://github.com/kececirecep/Banking-Website-Landing-Page",
+      githubUrl: "https://github.com/kececirecep/Banking-Website-Landing-Page",
     },
     {
       image: "https://i.imgur.com/FQPgfu7.png",
       title: "Blog Template",
-      desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
+      desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi." : "It is a fully responsive react project that I developed using React and tailwindcss.",
       tags: ["react", "tailwindcss", "blog"],
       url: "https://kececi-portfolio-blog.netlify.app",
-      githubUrl:"https://github.com/kececirecep/blogPortfoliio",
+      githubUrl: "https://github.com/kececirecep/blogPortfoliio",
     },
     {
       image: "https://i.imgur.com/K9qsBgM.png",
       title: "Youtube Video List",
-      desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
+      desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi." : "It is a fully responsive react project that I developed using React and tailwindcss.",
       tags: ["react", "tailwindcss"],
       url: "https://kececi-youtube.netlify.app",
-      githubUrl:"https://github.com/kececirecep/youtube",
+      githubUrl: "https://github.com/kececirecep/youtube",
     },
     {
       image: "https://i.imgur.com/GL1nqJN.png",
       title: "Todo App",
-      desc: "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi.",
+      desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum full responsive bir react projesi." : "It is a fully responsive react project that I developed using React and tailwindcss.",
       tags: ["react", "tailwindcss"],
       url: "https://kececi-todo.netlify.app",
-      githubUrl:"https://github.com/kececirecep/todo",
+      githubUrl: "https://github.com/kececirecep/todo",
     },
     {
       image: "https://i.imgur.com/l4VHgxh.png",
-      title: "Portfolio",
-      desc: "React ve tailwindcss kullanarak geliştirmiş olduğum bir react projesi.",
+      title: "Portfolio", 
+      desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum bir react projesi." : "A react project I developed using React and tailwindcss.",
       tags: ["react", "tailwindcss"],
       url: "https://kececi-portfolio-v2.netlify.app",
-      githubUrl:"https://github.com/kececirecep/portfolio-one",
+      githubUrl: "https://github.com/kececirecep/portfolio-one",
     },
     {
       image: "https://i.imgur.com/zuGTlR1.png",
-      title: "Number Matching Game",
-      desc: "React ve tailwindcss kullanarak geliştirmiş olduğum numara eşleştirme oyunu.",
+      title: "Number Matching Game", 
+      desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum numara eşleştirme oyunu." : "Number matching game I developed using React and tailwindcss.",
       tags: ["react", "tailwindcss"],
       url: "https://kececi-number-matching-game.netlify.app",
-      githubUrl:"https://github.com/kececirecep/number-matching-game",
+      githubUrl: "https://github.com/kececirecep/number-matching-game",
     },
     {
       image: "https://i.imgur.com/1dpkbu5.png",
-      title: "Portfolio v2",
-      desc: "React ve tailwindcss kullanarak geliştirmiş olduğum bir portfolio sitesi.",
+      title: "Portfolio v2", 
+      desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum bir portfolio sitesi." : "A portfolio site I developed using React and tailwindcss.",
       tags: ["react", "tailwindcss"],
       url: "https://kececi-number-matching-game.netlify.app",
-      githubUrl:"https://github.com/kececirecep/portfolio-theme",
+      githubUrl: "https://github.com/kececirecep/portfolio-theme",
     },
     {
       image: "https://i.imgur.com/Rv9NoFN.png",
-      title: "Star Wars Yoda",
-      desc: "Css Alıştırmaları",
+      title: "Star Wars Yoda", 
+      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
       tags: ["css"],
-      url: "https://codepen.io/kececi/pen/BayjPEV"
+      url: "https://codepen.io/kececi/pen/BayjPEV",
+      githubUrl: "https://codepen.io/kececi/pen/BayjPEV"
     }, {
       image: "https://i.imgur.com/66diiiU.png",
       title: "Css Bear",
-      desc: "Css Alıştırmaları",
+      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
       tags: ["css"],
-      url: "https://codepen.io/kececi/pen/GRgjydM"
+      url: "https://codepen.io/kececi/pen/GRgjydM",
+      githubUrl: "https://codepen.io/kececi/pen/GRgjydM"
     }, {
       image: "https://i.imgur.com/MtruVGF.png",
       title: "Pizza",
-      desc: "Css Alıştırmaları",
+      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
       tags: ["css"],
-      url: "https://codepen.io/kececi/pen/oNggYoL"
+      url: "https://codepen.io/kececi/pen/oNggYoL",
+      githubUrl: "https://codepen.io/kececi/pen/oNggYoL"
     }, {
       image: "https://i.imgur.com/3lIGO6f.png",
       title: "Pokémon",
-      desc: "Css Alıştırmaları",
+      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
       tags: ["css"],
-      url: "https://codepen.io/kececi/pen/rNaBxyo"
+      url: "https://codepen.io/kececi/pen/rNaBxyo",
+      githubUrl: "https://codepen.io/kececi/pen/rNaBxyo"
     }, {
       image: "https://i.imgur.com/eooxIqH.png",
       title: "Dondurma",
-      desc: "Css Alıştırmaları",
+      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
       tags: ["css"],
-      url: "https://codepen.io/kececi/pen/aMYRvy"
+      url: "https://codepen.io/kececi/pen/aMYRvy",
+      githubUrl: "https://codepen.io/kececi/pen/aMYRvy"
     },
     {
       image: "https://i.imgur.com/pzHO7YF.png",
       title: "Kedi",
-      desc: "Css Alıştırmaları",
+      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
       tags: ["css"],
-      url: "https://codepen.io/kececi/pen/yreJmQ"
+      url: "https://codepen.io/kececi/pen/yreJmQ",
+      githubUrl: "https://codepen.io/kececi/pen/yreJmQ"
     }, {
       image: "https://i.imgur.com/w0jzX4I.png",
       title: "Kutu",
-      desc: "Css Alıştırmaları",
+      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
       tags: ["css"],
-      url: "https://codepen.io/kececi/pen/GeLpJJ?editors=0010"
+      url: "https://codepen.io/kececi/pen/GeLpJJ?editors=0010",
+      githubUrl: "https://codepen.io/kececi/pen/GeLpJJ?editors=0010"
     }, {
       image: "https://i.imgur.com/bVEcMBz.png",
       title: "Domuz",
-      desc: "Css Alıştırmaları",
+      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
       tags: ["css"],
-      url: "https://codepen.io/kececi/pen/bZvJjz"
+      url: "https://codepen.io/kececi/pen/bZvJjz",
+      githubUrl: "https://codepen.io/kececi/pen/bZvJjz"
     }, {
       image: "https://i.imgur.com/WiTQ5GH.png",
       title: "Pokemon",
-      desc: "Css Alıştırmaları",
+      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
       tags: ["css"],
-      url: "https://codepen.io/kececi/pen/wQPGbP"
+      url: "https://codepen.io/kececi/pen/wQPGbP",
+      githubUrl: "https://codepen.io/kececi/pen/wQPGbP"
     },
     {
       image: "https://i.imgur.com/H5JzrKk.png",
       title: "Login Page",
-      desc: "Css Alıştırmaları",
+      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
       tags: ["css"],
-      url: "https://codepen.io/kececi/pen/rNxdGwO"
+      url: "https://codepen.io/kececi/pen/rNxdGwO",
+      githubUrl: "https://codepen.io/kececi/pen/rNxdGwO"
     }, {
       image: "https://i.imgur.com/ocECzLz.png",
       title: "Google Error Page",
-      desc: "Css Alıştırmaları",
+      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
       tags: ["css"],
-      url: "https://codepen.io/kececi/pen/KEmjMg"
+      url: "https://codepen.io/kececi/pen/KEmjMg",
+      githubUrl: "https://codepen.io/kececi/pen/KEmjMg"
     },
     {
       image: "https://i.imgur.com/zPiCgky.png",
       title: "Menu",
-      desc: "Css Alıştırmaları",
+      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
       tags: ["css"],
-      url: "https://codepen.io/kececi/pen/LavVzr"
+      url: "https://codepen.io/kececi/pen/LavVzr",
+      githubUrl: "https://codepen.io/kececi/pen/LavVzr"
     }, {
       image: "https://i.imgur.com/NV4nbF3.png",
       title: "Efektif Animasyon",
-      desc: "Css Alıştırmaları",
+      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
       tags: ["css"],
-      url: "https://codepen.io/kececi/pen/MWWxjMv"
+      url: "https://codepen.io/kececi/pen/MWWxjMv",
+      githubUrl: "https://codepen.io/kececi/pen/MWWxjMv"
     },
   ]
   const [activeButton, setActiveButton] = useState("react");
@@ -229,23 +246,48 @@ const TabMenu = () => {
 
       <div>
         <div className='mb-8'>
-          <h1 className='text-2xl font-bold mb-2 dark:text-white'>Projeler</h1>
-          <p className='text-sm text-gray-500 dark:text-white'>Farklı alanlardaki çalışmalarımı görüntüleyebilirsiniz.</p>
+          <h1 className='text-2xl font-bold mb-2 dark:text-white'>{language === "tr" ? "Projeler" : "Projects"}</h1>
+          <p className='text-sm text-gray-500 dark:text-white'>{language === "tr" ? "Farklı alanlardaki çalışmalarımı görüntüleyebilirsiniz." : "You can view my work in different fields."}</p>
         </div>
         <div className='mb-8 gap-4 flex uppercase flex-col sm:flex-row'>
           <button
             onClick={(e) => reactClick("react")}
             className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white ${activeButton === "react" ? "active" : ""}`}><FaReact size={"25px"} /> React ({counterCategory("react")})</button>
-          <button onClick={(e) => reactClick("css")} className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white border dark:border-[#34495E] ${activeButton === "css" ? "active" : ""}`}><RiCss3Line size={"22px"} />Css ({counterCategory("css")})</button> 
+          <button onClick={(e) => reactClick("css")} className={`py-2 px-3 text-sm shadow rounded-xl flex items-center gap-2 dark:text-white border dark:border-[#34495E] ${activeButton === "css" ? "active" : ""}`}><RiCss3Line size={"22px"} />Css ({counterCategory("css")})</button>
         </div>
 
-        <div className='pb-8 dark:text-white text-gray-500   text-sm'>
-          {
-            activeButton === "react" ? <p>React projelerimi içeren portföyümde, modern web geliştirme tekniklerini kullanarak oluşturduğum uygulamaları sergiliyorum. Her proje, benim teknik becerilerimi ve yaratıcılığımı yansıtmaktadır. Siz de bu projelerin hem kod yapısını hem tasarımını detaylıca inceleyebilirsiniz.</p> : ""}
-          {
-            activeButton === "css" ? <p>Yıllar önce, her gün küçük bir tasarım yaparak, CSS becerilerimi geliştirmek için bir hedef koymuştum. Bu süreçte, birçok farklı proje üzerinde çalıştım ve her biri benim için önemli bir öğrenme deneyimi oldu. İşte onlardan bazıları.</p> : ""
-          }
-          
+        <div className='pb-8 dark:text-white text-gray-500 text-sm'>
+          {activeButton === "react" && language === "tr" ? (
+            <p>
+              React projelerimi içeren portföyümde, modern web geliştirme tekniklerini
+              kullanarak oluşturduğum uygulamaları sergiliyorum. Her proje, benim teknik
+              becerilerimi ve yaratıcılığımı yansıtmaktadır. Siz de bu projelerin hem
+              kod yapısını hem tasarımını detaylıca inceleyebilirsiniz.
+            </p>
+          ) : activeButton === "react" ? (
+            <p>
+              In my portfolio containing my React projects, I showcase the applications
+              I created using modern web development techniques. Each project reflects
+              my technical skills and creativity. You can examine both the code
+              structure and design of these projects in detail.
+            </p>
+          ) : null}
+
+          {activeButton === "css" && language === "tr" ? (
+            <p>
+              Yıllar önce, her gün küçük bir tasarım yaparak, CSS becerilerimi
+              geliştirmek için bir hedef koymuştum. Bu süreçte, birçok farklı proje
+              üzerinde çalıştım ve her biri benim için önemli bir öğrenme deneyimi oldu.
+              İşte onlardan bazıları.
+            </p>
+          ) : activeButton === "css" ? (
+            <p>
+              Years ago, I set a goal to improve my CSS skills by creating a small
+              design every day. During this period, I worked on many different projects
+              and each one was an important learning experience for me. Here are some of
+              them.
+            </p>
+          ) : null}
         </div>
 
         <div

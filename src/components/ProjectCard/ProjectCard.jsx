@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FiGithub } from "react-icons/fi";
+import { FiCodepen, FiGithub } from "react-icons/fi";
 
 import { motion } from "framer-motion";
 
@@ -28,8 +28,8 @@ const ProjectCard = (props) => {
                 )
               })
             }
-          </div> 
-          <Link to={props.githubUrl} target='_blank' className='rounded hover:bg-[#ececec] dark:text-white dark:hover:text-[#a1adb9] dark:hover:bg-gray-600 border dark:border-[#34495E] p-2 cursor-pointer'><FiGithub /></Link>
+          </div>
+          <Link to={props.githubUrl} target='_blank' className='rounded hover:bg-[#ececec] dark:text-white dark:hover:text-[#a1adb9] dark:hover:bg-gray-600 border dark:border-[#34495E] p-2 cursor-pointer'>{props.tags.includes("css") ? < FiCodepen /> : < FiGithub />}</Link>
         </div>
       </div>
     </motion.div>

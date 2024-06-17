@@ -22,10 +22,10 @@ import { IoLanguageSharp } from "react-icons/io5";
 const ProfileInfo = () => {
     let themeStatus = useSelector(state => state.theme.theme)
     let language = useSelector(state => state.language.language)
- 
+
 
     const dispatch = useDispatch();
- 
+
 
     const social = [
         {
@@ -87,13 +87,13 @@ const ProfileInfo = () => {
             <div className='flex flex-col gap-3'>
                 <div className='flex flex-col gap-2'>
                     <h2 className='text-2xl font-bold'>Recep Kececi</h2>
-                    <span className='text-gray-500 dark:text-white'>Frontend Developer</span>
+                    <span className='text-gray-500 dark:text-white'>{language === "tr" ? "Ön Uç Geliştirici" : "Frontend Developer"}</span>
                 </div>
                 <span className='text-sm text-gray-500 dark:text-white'>
                     {language === 'tr' ?
-                        "Merhaba, ben Recep Kececi. Yazılım geliştirme ve tasarım konularında çalışmakta olan biriyim. React ve CSS gibi teknolojilere olan hakimiyetimle web uygulamaları geliştiriyorum. Yenilikçi projelerde çalışarak deneyimimi ve yeteneklerimi geliştirmeyi hedefliyorum. İşbirliği ruhuyla takımımı desteklemek ve kullanıcı odaklı çözümler sunmak için buradayım."
+                        "Merhaba, ben Recep Kececi. Yazılım geliştirme ve tasarım konularında çalışmaktayım. React ve CSS gibi teknolojilere olan hakimiyetimle web uygulamaları geliştiriyorum. Yenilikçi projelerde çalışarak deneyimimi ve yeteneklerimi geliştirmeyi hedefliyorum. İşbirliği ruhuyla takımımı desteklemek ve kullanıcı odaklı çözümler sunmak için buradayım."
                         :
-                        "Hello, I am Recep Kececi. I am working in software development and design. I develop web applications with my proficiency in technologies such as React and CSS. I aim to improve my experience and skills by working on innovative projects. I am here to support my team with a spirit of collaboration and to offer user-focused solutions."
+                        "Hello, I am Recep Kececi. I work in the fields of software development and design. With my proficiency in technologies such as React and CSS, I develop web applications. I aim to enhance my experience and skills by working on innovative projects. I am here to support my team with a spirit of collaboration and to provide user-centered solutions."
                     }
                 </span>
                 <div className="flex flex-col md:flex-row gap-4 ">

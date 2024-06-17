@@ -6,35 +6,60 @@ const Timeline = () => {
     const data = [
         {
             icon: <FiBriefcase />,
-            title: "Software Engineer",
-            company: "Acme Inc.",
-            time: "2019 ",
-            desc: "Developed and maintained complex web applications using React, Node.js, and various other technologies. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+            title: "Front End Developer",
+            company: "Vagonsoft Web Yazılım",
+            time: "2022-2023 Tem.",
+            desc: (
+                <>
+                    Vagonsoft firmasında front-end geliştirme alanında yaklaşık 7 ay çalıştım ve bu süre boyunca; <br />
+                    Otopark, Oto Yıkama, Nakliye Otomasyonları <br />
+                    Kombi Arama web sitesi için arayüz tasarımı <br />
+                    Viptransfer web sitesi için arayüz tasarımı gibi bir çok projeyi tamamladım. <br />
+                    Genel olarak js, bootstrap5 ve tailwindCss kullanıldı.
+                </>
+            )
         }, {
             icon: <FiBriefcase />,
-            title: "Software Engineer",
-            company: "Acme Inc.",
-            time: "2019 ",
-            desc: "Developed and maintained complex web applications using React, Node.js, and various other technologies. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+            title: "Front End Developer",
+            company: "Koçtim Group",
+            time: "2020-2021",
+            desc: (
+                <>
+                    1 yıl boyunca front end ve web tasarımcı olarak çalıştım.<br />
+                    30'dan fazla web sitesinin yönetimi, düzenlemesi ve arayüz tasarımlarının iyileştirmeleri yapıldı. <br />
+                    Ağırlıklı olarak Javascript kullanıldı.
+                </>
+            ),
         },
         {
             icon: <FiBriefcase />,
-            title: "Software Engineer",
-            company: "Acme Inc.",
-            time: "2019 ",
-            desc: "Developed and maintained complex web applications using React, Node.js, and various other technologies. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+            title: "Front End Developer",
+            company: "Bozkurt Yazılım",
+            time: "2019-2021",
+            desc: (
+                <>
+                    Güzellik Merkezi, Poliklinik ve Teknik Servis randevu sistemlerinin arayüzü geliştirildi. <br />
+                    Projelerde front end tarafında çalıştım, React ve TailwindCss kullandım.
+                </>
+            ),
         },
         {
             icon: <FiBriefcase />,
-            title: "Software Engineer",
-            company: "Acme Inc.",
-            time: "2019 ",
-            desc: "Developed and maintained complex web applications using React, Node.js, and various other technologies. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+            title: "IT STAJYER",
+            company: "Doğuş Holding",
+            time: "2016-2017",
+            desc: (
+                <>
+                    Doğuş Teknoloji'nin IT departmanında 9 ay boyunca çalıştım.<br />
+                    Bu süre içinde hem donanım hem de yazılım alanlarında görev
+                    aldım.
+                </>
+            ),
         }
     ]
 
     return (
-        <div className='container max-w-[1200px] mx-auto bg-white dark:bg-gray-800 dark:text-white mt-8 rounded p-4 pt-4'>
+        <div className='container max-w-[1200px] mx-auto bg-white dark:bg-gray-800 dark:text-white mt-8 rounded py-6 px-2 md:px-32'>
             <h2 className='text-xl font-medium syne mb-4 flex items-center gap-2'><IoBriefcaseOutline size={20} /> Deneyim</h2>
             {
                 data.map((item, index) => {
