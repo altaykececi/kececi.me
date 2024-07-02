@@ -114,35 +114,35 @@ const TabMenu = () => {
     {
       image: "https://i.imgur.com/Rv9NoFN.png",
       title: "Star Wars Yoda", 
-      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
+      desc: language === "tr" ? "Css Alıştırmaları" : "Css Exercises",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/BayjPEV",
       githubUrl: "https://codepen.io/kececi/pen/BayjPEV"
     }, {
       image: "https://i.imgur.com/66diiiU.png",
       title: "Css Bear",
-      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
+      desc: language === "tr" ? "Css Alıştırmaları" : "Css Exercises",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/GRgjydM",
       githubUrl: "https://codepen.io/kececi/pen/GRgjydM"
     }, {
       image: "https://i.imgur.com/MtruVGF.png",
       title: "Pizza",
-      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
+      desc: language === "tr" ? "Css Alıştırmaları" : "Css Exercises",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/oNggYoL",
       githubUrl: "https://codepen.io/kececi/pen/oNggYoL"
     }, {
       image: "https://i.imgur.com/3lIGO6f.png",
       title: "Pokémon",
-      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
+      desc: language === "tr" ? "Css Alıştırmaları" : "Css Exercises",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/rNaBxyo",
       githubUrl: "https://codepen.io/kececi/pen/rNaBxyo"
     }, {
       image: "https://i.imgur.com/eooxIqH.png",
       title: "Dondurma",
-      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
+      desc: language === "tr" ? "Css Alıştırmaları" : "Css Exercises",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/aMYRvy",
       githubUrl: "https://codepen.io/kececi/pen/aMYRvy"
@@ -150,28 +150,28 @@ const TabMenu = () => {
     {
       image: "https://i.imgur.com/pzHO7YF.png",
       title: "Kedi",
-      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
+      desc: language === "tr" ? "Css Alıştırmaları" : "Css Exercises",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/yreJmQ",
       githubUrl: "https://codepen.io/kececi/pen/yreJmQ"
     }, {
       image: "https://i.imgur.com/w0jzX4I.png",
       title: "Kutu",
-      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
+      desc: language === "tr" ? "Css Alıştırmaları" : "Css Exercises",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/GeLpJJ?editors=0010",
       githubUrl: "https://codepen.io/kececi/pen/GeLpJJ?editors=0010"
     }, {
       image: "https://i.imgur.com/bVEcMBz.png",
       title: "Domuz",
-      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
+      desc: language === "tr" ? "Css Alıştırmaları" : "Css Exercises",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/bZvJjz",
       githubUrl: "https://codepen.io/kececi/pen/bZvJjz"
     }, {
       image: "https://i.imgur.com/WiTQ5GH.png",
       title: "Pokemon",
-      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
+      desc: language === "tr" ? "Css Alıştırmaları" : "Css Exercises",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/wQPGbP",
       githubUrl: "https://codepen.io/kececi/pen/wQPGbP"
@@ -179,14 +179,14 @@ const TabMenu = () => {
     {
       image: "https://i.imgur.com/H5JzrKk.png",
       title: "Login Page",
-      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
+      desc: language === "tr" ? "Css Alıştırmaları" : "Css Exercises",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/rNxdGwO",
       githubUrl: "https://codepen.io/kececi/pen/rNxdGwO"
     }, {
       image: "https://i.imgur.com/ocECzLz.png",
       title: "Google Error Page",
-      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
+      desc: language === "tr" ? "Css Alıştırmaları" : "Css Exercises",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/KEmjMg",
       githubUrl: "https://codepen.io/kececi/pen/KEmjMg"
@@ -194,14 +194,14 @@ const TabMenu = () => {
     {
       image: "https://i.imgur.com/zPiCgky.png",
       title: "Menu",
-      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
+      desc: language === "tr" ? "Css Alıştırmaları" : "Css Exercises",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/LavVzr",
       githubUrl: "https://codepen.io/kececi/pen/LavVzr"
     }, {
       image: "https://i.imgur.com/NV4nbF3.png",
       title: "Efektif Animasyon",
-      desc: language === "tr" ? "Alıştırmaları" : "Css Exercises",
+      desc: language === "tr" ? "Css Alıştırmaları" : "Css Exercises",
       tags: ["css"],
       url: "https://codepen.io/kececi/pen/MWWxjMv",
       githubUrl: "https://codepen.io/kececi/pen/MWWxjMv"
