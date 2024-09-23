@@ -16,6 +16,14 @@ const TabMenu = () => {
 
   const projects = [
     {
+      image: "https://i.imgur.com/qADnvRW.gif",
+      title: "Monolog Cv Theme",
+      desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum çok kapsamlı, full responsive bir react projesi." : "A very comprehensive, fully responsive react project that I developed using React and tailwindcss.",
+      tags: ["react", "tailwindcss","redux toolkit"],
+      url: "https://monologtheme.netlify.app/",
+      githubUrl: "#",
+    },
+    {
       image: "https://app.netlify.com/.netlify/images?url=https://d33wubrfki0l68.cloudfront.net/65b40524d9ab560008fc41ff/screenshot_2024-01-26-19-17-51-0000.webp&fit=cover&h=500&w=800",
       title: "Resao Professional Crative Theme",
       desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum çok kapsamlı, full responsive bir react projesi." : "A very comprehensive, fully responsive react project that I developed using React and tailwindcss.",
