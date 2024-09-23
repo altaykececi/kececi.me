@@ -16,7 +16,7 @@ const TabMenu = () => {
 
   const projects = [
     {
-      image: "https://i.imgur.com/qADnvRW.gif",
+      image: "https://i.imgur.com/C50vGeN.png",
       title: "Monolog Cv Theme",
       desc: language === "tr" ? "React ve tailwindcss kullanarak geliştirmiş olduğum çok kapsamlı, full responsive bir react projesi." : "A very comprehensive, fully responsive react project that I developed using React and tailwindcss.",
       tags: ["react", "tailwindcss","redux toolkit"],
